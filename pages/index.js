@@ -1,20 +1,23 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Jumbotron from '@components/Jumbotron'
+import CustomTabs from '@components/CustomTabs'
+import Design from '@components/Design'
+import Hosting from '@components/Hosting'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Fat Head Solutions!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        {/* <Header title="Fat Head Solutions" /> */}
+        <Jumbotron />
+        <CustomTabs />
       </main>
 
       <Footer />
